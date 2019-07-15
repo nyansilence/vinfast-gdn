@@ -64,7 +64,7 @@ body {
   max-width: 50px;
   top: 123px;
   left: -38px;
-  z-index: 1;
+  z-index: 3;
 }
 
 .star-light-2 {
@@ -72,6 +72,7 @@ body {
   max-width: 60px;
   top: 32px;
   right: 36px;
+  z-index: 3;
 }
 
 .light-car {
@@ -97,19 +98,18 @@ body {
 }
 
 .logo img{
-  margin-left: 40px;
   margin-top: 30px;
 }
 
 .img-1 {
-  width: 96px;
+  width: 76px;
   position: absolute;
-  left: -45px;
+  left: -20px;
 }
 
 .img-5 {
-  width: 95px;
-  margin-right: 0;
+  width: 89px;
+  margin-right: 6px;
 }
 
 .img-qt {
@@ -117,22 +117,29 @@ body {
 }
 
 .img-tr {
-  margin-top: -4px;
+  margin-top: 0;
   position: relative;
 }
 
 .img-bg {
-  margin-left: 10px;
+  margin-left: 18px;
 }
 
 .img-car {
   margin-left: 0;
 }
 
+.shadow {
+  position: absolute;
+  bottom: 51px;
+  left: -52px;
+  z-index: 0;
+}
+
 .car {
-  margin-top: -51px;
+  margin-top: -47px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-left: 5px;
 }
 
@@ -147,7 +154,12 @@ body {
 }
 
 .footer {
-  margin-left: -1px;
+  /* margin-left: -1px; */
+}
+
+.img-tn {
+  width: 60%;
+  margin-top: 20px;
 }
 
 .animation * {
@@ -245,20 +257,20 @@ body {
 
 .ani-1 {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .ani-5 {
   position: relative;
-  z-index: 0;
+  z-index: 1;
 }
 
 .ani-jump {
-  animation: jump 1.6s forwards .6s ease-in-out; 
+  animation: jump 1.6s infinite .6s ease-in-out; 
 }
 
 .ani-jump-n {
-  animation: jump 1.6s forwards .8s ease-in-out; 
+  animation: jump 1.6s infinite .8s ease-in-out; 
 }
 
 @keyframes bounce {

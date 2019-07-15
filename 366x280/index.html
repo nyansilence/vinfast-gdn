@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VinFast</title>
+    <meta name="ad.size" content="width=336,height=280">
+    <meta property="og:image" content="./img/logo.png">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/EBLoader.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        window.onload = function () {
+            loadScripts([
+            ], loadAssets);
+        };
+
+        function loadAssets() {
+            preloadImages([
+                'img/logo.png',
+                'img/light-star.png',
+                'img/trainghiem.png',
+                'img/bg.png',
+                'img/car.png',
+                'img/light-car.png',
+                'img/chuongtrinh.png',
+                'img/1.png',
+                'img/5.png',
+                'img/footer.jpg',
+                'img/tr.png',
+                'img/quatang.png',
+            ], timeline);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="mod-gdn animation">
+        <div class="container">
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png" alt="" class="img-responsive">
+                    <!-- <img src="img/light-star.png" alt="" class="img-responsive ani-star star-light"> -->
+                </div>
+                <div>
+                    <img src="img/trainghiem.png" alt="" class="img-responsive img-tn">
+                </div>
+            </div>
+            <div class="middle">
+                <div class="bg">
+                    <img src="img/bg.png" alt="" class="img-responsive img-bg">
+                    <div class="event">
+                        <div class="event-item">
+                            <div class="">
+                                <img src="img/quatang.png" alt="" class="img-responsive img-qt">
+                            </div>
+                            <div class="ani-1 ani-jump">
+                                <img src="img/1.png" alt="" class="img-responsive img-1">
+                            </div>
+                            <div class="ani-5 ani-jump-n">
+                                <img src="img/5.png" alt="" class="img-responsive img-5">
+                            </div>
+                            <div class="shadow">
+                                <img src="img/shadow.png" alt="" class="img-responsive img-shadow">
+                            </div>
+                            <div class="">
+                                <img src="img/tr.png" alt="" class="img-responsive img-tr">
+                            </div>
+                            <img src="img/light-star.png" alt="" class="img-responsive ani-star star-light-2">
+                            <img src="img/light-star.png" alt="" class="img-responsive ani-star-n star-light-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="car">
+                    <img src="img/car.png" alt="" class="img-responsive img-car ani-left">
+                    <div class="light-car">
+                        <img src="img/light-car.png" alt="" class="img-responsive ani-light-car">
+                    </div>
+                    <div class="light-car-n">
+                        <img src="img/light-car.png" alt="" class="img-responsive ani-light-car">
+                    </div>
+                    <img src="img/chuongtrinh.png" alt="" class="img-responsive img-ct">
+                    <img src="img/dangki.jpg" alt="" class="img-responsive img-dk">
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="footer">
+                    <img src="img/footer.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
