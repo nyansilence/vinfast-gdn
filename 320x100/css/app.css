@@ -96,6 +96,7 @@ body {
   top: 123px;
   left: -38px;
   z-index: 3;
+  display: none;
 }
 
 .star-light-2 {
@@ -104,6 +105,7 @@ body {
   top: 32px;
   right: 36px;
   z-index: 3;
+  display: none;
 }
 
 .light-car {
@@ -166,10 +168,16 @@ body {
   width: 66px;
 }
 
+.logo {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .car {
   /* margin-top: -47px; */
   position: relative;
   z-index: 2;
+  margin-top: 13px;
 }
 
 .bg {
@@ -200,6 +208,13 @@ body {
   flex-direction: column;
   -webkit-flex-direction: column;
   height: 100%;
+  position: relative;
+}
+
+.img-ct {
+  bottom: 6px;
+  position: absolute;
+  right: 0;
 }
 
 .footer {

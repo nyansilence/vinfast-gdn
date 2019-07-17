@@ -157,7 +157,7 @@ body {
 }
 
 .img-bg {
-  margin-left: 27px;
+  margin-left: 30px;
 }
 
 .img-car {
@@ -179,7 +179,7 @@ body {
   margin-top: -34px;
   position: relative;
   z-index: 2;
-  margin-left: 11px;
+  margin-left: 15px;
 }
 
 .bg {
@@ -190,11 +190,12 @@ body {
 .event {
   position: absolute;
   top: 15px;
-  right: 102px;
+  right: 88px;
 }
 
 .footer {
   /* margin-left: -1px; */
+  /* margin-top: -19px; */
 }
 
 .img-tn {
