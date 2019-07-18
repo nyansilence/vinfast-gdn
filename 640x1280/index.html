@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VinFast</title>
+    <meta name="ad.size" content="width=300,height=600">
+    <meta property="og:image" content="./img/logo.png">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/EBLoader.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        window.onload = function () {
+            loadScripts([], loadAssets);
+        };
+
+        function loadAssets() {
+            preloadImages([
+                'img/bg.png',
+                'img/car.png',
+                'img/light-car.png',
+                'img/1.png',
+                'img/5.png',
+            ], timeline);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="mod-gdn animation">
+        <img src="img/bg.png" alt="" class="img-responsive bg">
+        <div class="event">
+            <div class="ani-1 ani-jump">
+                <img src="img/1.png" alt="" class="img-responsive img-1">
+                <img src="img/light-star.png" alt="" class="img-responsive star light-star ani-star">
+            </div>
+            <div class="ani-5 ani-jump-n">
+                <img src="img/5.png" alt="" class="img-responsive img-5">
+                <img src="img/light-star.png" alt="" class="img-responsive star light-star-n ani-star-n">
+            </div>
+        </div>
+        <div class="car">
+            <img src="img/car.png" alt="" class="img-responsive img-car ani-left">
+            <div class="light-car">
+                <img src="img/light-car.png" alt="" class="img-responsive ani-light-car">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

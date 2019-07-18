@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.mod-gdn {
+  background: #fefefe;
+  overflow: hidden;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+}
+.light-car,
+.ani-5,
+.car,
+.ani-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.star {
+  position: absolute;
+  z-index: 4;
+}
+
+.light-star {
+  top: 52%;
+  right: 34%;
+}
+
+.star.light-star{
+  max-width: 30%;
+}
+
+.light-star-n {
+  top: 39%;
+  right: 10%;
+}
+
+.star.light-star-n{
+  max-width: 30%;
+}
+
+.car {
+  z-index: 3;
+}
+
+.ani-1 {
+  z-index: 1;
+}
+
+.img-responsive {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.animation * {
+  transition: all .8s ease-out; }
+
+.animation .ani-opacity {
+  transition: all 1s ease-out;
+  opacity: 0;}
+
+.animation .ani-right {
+  opacity: 0;
+  transform: translateX(150px); }
+
+.animation .ani-left {
+  opacity: 0;
+  transform: translateX(-150px); }
+
+.animation .ani-bottom {
+  opacity: 0;
+  transform: translateY(150px); }
+
+.animation .ani-top {
+  opacity: 0;
+  transform: translateY(-150px); }
+
+.animation .ani-shake {
+  animation: shake 1.4s forwards .8s; }
+
+.animation .ani-bounce {
+  animation: bounce 1s infinite .8s; }
+
+.animation.has-animation .ani-opacity,
+.animation.has-animation .ani-right,
+.animation.has-animation .ani-left,
+.animation.has-animation .ani-bottom,
+.animation.has-animation .ani-top {
+  opacity: 1;
+  transform: translate(0); }
+
+.animation .ani-delay-1 {
+  transition-delay: .6s; }
+
+.animation .ani-delay-2 {
+  transition-delay: 1s; }
+
+.animation .ani-delay-3 {
+  transition-delay: 1.2s; }
+.animation .ani-delay-4 {
+  transition-delay: 1.6s; }
+
+.ani-star {
+  opacity: 0;
+  animation: star 3s infinite;
+}
+
+.ani-star-n {
+  opacity: 0;
+  animation: star 3s infinite;
+}
+
+.ani-tonador {
+  opacity: 0;
+  animation: tonador 1.6s forwards 2s; 
+}
+
+.ani-tonador-n {
+  opacity: 0;
+  animation: tonador 1.6s forwards 2.2s; 
+}
+
+.ani-light-car {
+  opacity: 0;
+  animation: light-car .8s infinite .9s;
+}
+
+.ani-load {
+  position: relative;
+}
+
+.ani-load::before {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  transition: all .6s ease-in-out .4s;
+}
+
+.animation.has-animation .ani-load::before{
+  max-height: 0;
+}
+
+.ani-jump {
+  animation: jump 1.6s infinite .6s ease-in-out; 
+}
+
+.ani-jump-n {
+  animation: jump 1.6s infinite .8s ease-in-out; 
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(0.9); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg); }
+  20% {
+    transform: rotate(10deg); }
+  40% {
+    transform: rotate(-8deg); }
+  60% {
+    transform: rotate(6deg); }
+  80% {
+    transform: rotate(-4deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+@keyframes star {
+  0% {
+    opacity: .3;
+    transform: rotate(0deg); }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .3;
+    transform: rotate(360deg); }
+}
+
+@keyframes tonador {
+  0% {
+    opacity: 0;
+    transform: rotateY(0deg); }
+  100% {
+    opacity: 1;
+    transform: rotateY(360deg); }
+}
+
+@keyframes light-car {
+  0% {
+    opacity: .3;
+  }
+
+  40% {
+    opacity: .8;
+  }
+
+  60% {
+    opacity: .3;
+  }
+
+  80% {
+    opacity: .8;
+  }
+
+  100% {
+    opacity: .3;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-3%);
+  }
+  40% {
+    transform: translateY(0);
+  }
+
+  60% {
+    transform: translateY(0);
+  }
+
+  80% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
